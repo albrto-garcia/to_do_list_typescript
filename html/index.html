@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="crud-container">
+        <h1>To-Do</h1>
+        <form id="task-form">
+            <input type="hidden" id="task-id" value="" />
+            <input type="text" id="task-title" placeholder="Titulo" required />
+            <textarea id="task-description" placeholder="Descripción"></textarea>
+            <select id="task-status" required>
+              <option value="0">No iniciada</option>
+              <option value="1">En progreso</option>
+              <option value="2">Completada</option>
+          </select>
+            <input type="date" id="task-due-date" />
+            <button type="submit">Save</button>
+        </form>
+        <a href="/html/tasks.html">Ver tareas</a>
+    </div>
+    <script src="/typescript/app.js"></script>
+</body>
+</html>
