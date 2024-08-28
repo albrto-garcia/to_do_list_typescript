@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>TO-DO APP</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 </head>
 <body>
-    <div class="crud-container">
-        <h1>To-Do</h1>
+    <!-- Barra de navegación -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Formulario para crear o editar tareas -->
+    <div class="centered-section">
         <form id="task-form">
             <input type="hidden" id="task-id" value="" />
-            <input type="text" id="task-title" placeholder="Titulo" required />
+            <input type="text" id="task-title" placeholder="Título" required />
             <textarea id="task-description" placeholder="Descripción"></textarea>
             <select id="task-status" required>
-              <option value="0">No iniciada</option>
-              <option value="1">En progreso</option>
-              <option value="2">Completada</option>
-          </select>
+                <option value="0">NO INICIADA</option>
+                <option value="1">EN PROGRESO</option>
+                <option value="2">COMPLETADA</option>
+            </select>
             <input type="date" id="task-due-date" />
-            <button type="submit">Save</button>
+            <button type="submit">GUARDAR</button>
         </form>
-        <a href="/html/tasks.html">Ver tareas</a>
     </div>
+
+    <!-- Script de la aplicación -->
     <script src="/typescript/app.js"></script>
 </body>
 </html>
